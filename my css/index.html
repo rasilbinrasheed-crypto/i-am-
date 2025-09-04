@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio • Rasal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cyber.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Rasal</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="accent">Rasal</span></h1>
+        <p>I'm a 17-year-old student at Caliph Life School. I love reading books and building clean, accessible, and performant web experiences.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img class="stock-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop" alt="Cyberpunk city at night" />
+        <div class="neon-cube" aria-hidden="true">
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>Hi, I'm Rasal — a student developer passionate about coding and web development. I enjoy learning by reading widely and turning ideas into polished websites and apps.</p>
+          <p>I'm currently studying at Caliph Life School and growing my skills by building projects and exploring modern web technologies.</p>
+        </div>
+        <div class="card">
+          <ul class="facts">
+            <li><strong>Age:</strong> 17</li>
+            <li><strong>School:</strong> Caliph Life School</li>
+            <li><strong>Interests:</strong> Coding, Web Development, Reading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid projects">
+          <article class="card project">
+            <div class="project-media"></div>
+            <h3>Project One</h3>
+            <p>Responsive web app with dark mode and offline support.</p>
+            <div class="chip-row">
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">PWA</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-media"></div>
+            <h3>Project Two</h3>
+            <p>Design system starter with accessible components and tokens.</p>
+            <div class="chip-row">
+              <span class="chip">Storybook</span>
+              <span class="chip">SCSS</span>
+              <span class="chip">ARIA</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-media"></div>
+            <h3>Project Three</h3>
+            <p>Analytics dashboard with charts, filters, and export features.</p>
+            <div class="chip-row">
+              <span class="chip">Vue</span>
+              <span class="chip">Charts</span>
+              <span class="chip">API</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>Accessibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p>Have a question or want to work together? Reach out.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <form class="card contact-form" id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rasal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="cyber.js"></script>
+</body>
+</html>
+
+
